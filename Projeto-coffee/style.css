@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'arial';
+}
+@font-face {
+    font-family: 'coffe' ;
+    src: url(font/coffee+teademo-Regular.ttf) format('opentype'),
+    url(font/coffee+teademo-Regular.ttf) format('truetype');
+}
+#usuario{
+    margin: 5px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to left ,#401506,#735A4C );
+}
+.title{
+    color: #BF8F65;
+    font-family: 'coffe' ;
+    font-size: 4em;
+}
+.nav .menu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.nav .menu > a{
+    margin: 2px;
+    text-transform: uppercase;
+    color: #BF8F65;
+    background-color: #735A4C;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'coffe';
+}
+.nav .menu > a:hover{
+    background-color: #F2E4DF;
+}
+#Menu{
+    display:none;
+}
+.login-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-image: linear-gradient(to left ,#401506,#735A4C );
+    padding: 10px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    background-color:#BF8F65 ;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.login:hover{
+    background-color:#F2E4DF ;
+    box-shadow: 0 0 20px #BF8F65;
+}
+.login > a{
+    padding: 10px 15px;
+    color: #401506;
+    text-decoration: none;
+}
+.login > a:hover{
+    color:#BF8F65 ;
+}
+.container-normal{
+    display: flex;
+    background-image: url(img/coffee-2.jpg);
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #F2E4DF;
+    justify-content: end;
+}
+.card{
+    display: flex;
+    background-color: rgba(169, 169, 169, 0.659);
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
+    color: #401506;
+    box-shadow:0 2px 13px rgba(0, 0, 0, 0.748); ;
+}
+.content > h1{
+    font-size: 30px;
+    text-align: center;
+    color: #BF8F65;
+    font-family: 'coffe';
+}
+.content > h2{
+    font-family: 'coffe';
+    padding: 10px;
+}
+.content > p{
+    font-family: 'coffe';
+    font-size: 15px;
+}
+.content{
+    padding: 10px;
+    font-size: 10px;
+}
+.btn1{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.748);
+    font-family: 'coffe';
+    cursor: pointer;
+}
+.content > a{
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: #BF8F65;
+}
+.container-img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    background-color:#735A4C ;
+    
+}
+.cards{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(169, 169, 169, 0.659);
+    width: 199px;
+    height: 300px;
+    border-radius: 20px;
+    color: #401506;
+    box-shadow:0 2px 13px rgba(0, 0, 0, 0.748); ;
+    
+}
+.img-div1{
+    background-image: url(img/coffee-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.img-div2{
+    background-image: url(img/coffe-div-2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.img-div3{
+    background-image: url(img/coffe-div-3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+#titulo-cards{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+@media screen and (max-width: 600px ){
+    #title{
+        font-size: 2em;
+    }
+    #logo{
+        width:60%;
+    }
+    .nav{
+        display: none;
+    }
+    #Menu{
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+    option{
+        background-color: #BF8F65;
+        font-family: 'coffe';
+    }
+    .login-cadastro{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: auto;
+        background-image: linear-gradient(to left ,#401506,#735A4C );
+        padding: 5px;
+    }
+    .redes-sociais{
+        margin: 5px;
+    }
+    .cards{
+        margin-top: 10px;
+        border: 1px solid black;
+        width: 149px;
+        height: 150px;
+        border-radius: 20px;
+        
+    }
+    .container-img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        background-color:#735A4C ;
+        
+    }
+}
+

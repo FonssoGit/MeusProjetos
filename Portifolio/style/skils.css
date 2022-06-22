@@ -1,0 +1,97 @@
+
+.skils{
+    height: 100%;
+    position: absolute;
+    background-color: #1D1D1D;
+    width: 100%;
+    left: -100%;
+    transition: all 300ms ease;
+    overflow: hidden;
+}
+.skils-open{
+    left: 0%;
+    animation: anima 300ms;
+}
+.btn-skils{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    opacity: 0.3;
+}
+.btn-skils h3{
+    color: #F2F2F2;
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.skils-titulo{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        'card-html card-css'
+        'card-js card-mysql'
+        ;
+        gap: 10px;
+        font-family: 'Poppins';
+}
+.card-html{
+    grid-area: card-html;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F25320;
+    color: white;
+}
+.card-css{
+    grid-area: card-css;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F8EE7;
+    color: white;
+}
+.skils .card-css #tags{
+    font-size: 20px;
+    color: grey;
+    font-family: 'Smooch', cursive; 
+    width: 100%;
+}
+.skils .card-css .descricao-card .descricao{
+    margin-left: 20px;
+}
+.card-js{
+    grid-area: card-js;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    background-color: #EAD41C;
+    font-family: 'Poppins';
+    cursor: none;
+}
+.card-js .img-js{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+.card-mysql{
+    grid-area: card-mysql;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+.card-mysql .img-mysql{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-mysql .img-mysql img{
+    width: 40px;
+}

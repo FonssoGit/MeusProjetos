@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Login & Cadastro</title>
+
+</head>
+<body>
+    <header>
+        <div class="esqueceuAsenha">
+            <div class="esqueceuItems">
+                <div class="seta-esquerda">
+                    <img onclick="voltarinicio()" src="icons/seta-esquerda.svg" alt="">
+                </div>
+                <h1>Esqueceu a senha?</h1>
+                <h4>Digite seu endereço de e-mail abaixo e nós lhe enviaremos um e-mail com senha</h4>
+                <div class="email-recuperação">
+                    <i class="fi fi-sr-envelope"></i><input type="email" placeholder="Digite seu e-mail">
+                </div>
+                <button>Enviar</button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="login-cadastro">
+                <button class="cadastrar" onclick="cadastrar()">Cadastrar</button>
+                <button class="pular" onclick="pular()">Pular</button>
+            </div>
+        </div>
+
+        <div class="container-pular">
+            <div class="pular-items">
+                <h2><img src="icons/anonimo.svg" alt="img-anonimo">Navegação Anônima</h2>
+                <h4>Agora voçé pode navegar com privacidade, vocé pode navegar sem se registrar, sinta-se a vontade para proseguir</h4>
+                
+                <div class="confirme">
+                    <button onclick="continuar()">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tela-login">
+            <div class="login-items">
+                <div class="titulos">
+                    <h1>Bem Vindo</h1>
+                    <h3>Faça login para continuar</h3>
+                </div>
+
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" placeholder="Senha" id="senha">
+
+                <div class="check">
+                    <input type="radio" id="radio" aria-checked="true"><label>Lembre de mim</label>
+                </div>
+                <button id="login" onclick="login()">Login</button>
+
+                <div class="line-login">
+                    <span id="cor1"></span>
+                    <span id="cor2"></span>
+                </div>
+                <button onclick="esqueceuSenha()">Esqueceu a senha ? Clique Aqui!</button>
+        </div>
+        <div class="inscrevase">
+            <div class="inscrevase-item">
+                <h1>Inscreva-se</h1>
+                <p><i class="fi fi-rr-user"></i><input type="text" placeholder="Nome"></p>
+                <p><i class="fi fi-rr-envelope"></i><input type="email" placeholder="Email"></p>
+                <p><i class="fi fi-rr-lock"></i><input type="password" placeholder="Senha"></p>
+                <p><i class="fi fi-rr-smartphone"></i><input type="text" placeholder="Celular"></p>
+                <button class="registro">Registro</button>
+                <div class="voltar-login">
+                    <span>Já tem uma conta? <a href="">Login</a></span>
+                </div>
+            </div>
+            <div class="line">
+                <span id="cor1"></span>
+                <span id="cor2"></span>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
