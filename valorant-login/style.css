@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    flex: 1;
 }
 .logo{
     width: 110px;
@@ -38,12 +39,13 @@
     border: none;
     background-color:rgba(128, 128, 128, 0.171);
     border-radius: 4px;
-    font-weight: 700;
-    text-transform: uppercase;
     outline: none;
 }
 .container form .prenchimento input::placeholder{
     color: rgba(128, 128, 128, 0.589);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
 }
 .container form .prenchimento h1{
     font-size: 20px;
@@ -102,10 +104,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(128, 128, 128, 0.192);
-    margin-top: 20px;
+    border: none; 
     cursor: pointer;
+    background-color: #e4364a;
 }
+.img_proximo button:disabled{
+    color:rgba(128, 128, 128, 0.171) ;
+    border: 2px solid rgba(128, 128, 128, 0.192); 
+    background-color: inherit;
+}
+
 .img_proximo button i{
     font-size: 35px;
     color:  rgba(128, 128, 128, 0.192);
@@ -274,6 +282,7 @@ footer .links  p{
 }
 @media screen and (max-width:632px) {
     .container form{
+        
         width: 100%;
     }
     #btn_inicar{
@@ -281,5 +290,16 @@ footer .links  p{
     }
     .links{
         z-index: 1;
+    }
+    .container form .table_btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .container form .table_btn button{
+        width:100%;
+        
     }
 }

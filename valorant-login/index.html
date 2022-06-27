@@ -40,8 +40,8 @@
             </div>
             <div class="prenchimento">
                 <h1>Fazer login</h1>
-                <input type="text" placeholder="nome de usuario">
-                <input type="password" placeholder="senha">
+                <input type="text" placeholder="nome de usuario" required>
+                <input type="password" placeholder="senha" required>
             </div>
             <div class="table_btn">
                 <button><i class="bi bi-facebook"></i></button>
@@ -53,7 +53,7 @@
             </div>
             <footer>
                 <div class="img_proximo">
-                    <button>
+                    <button disabled id="btnproximo">
                         <i class="bi bi-arrow-right-short"></i>
                     </button>
                 </div>
@@ -65,5 +65,7 @@
             </footer>
         </form>
     </div>
+    
+    <script src="script.js" defer></script>
 </body>
 </html>
